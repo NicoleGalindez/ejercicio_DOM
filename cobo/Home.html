@@ -52,9 +52,9 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="active" href="landing.html">Inicio</a></li>
-          <li><a href="trainers.html">Experiencias</a></li>
-          <li><a href="events.html">Rutas guardadas</a></li>
-          <li><a href="events.html">Mi menor</a></li>
+          <li><a href="tutores.html">Experiencias</a></li>
+          <li><a href="rutasguardadas.html">Rutas guardadas</a></li>
+          <li id="mimenor"><a href="events.html">Mi menor</a></li>
 
           <!--tutores lo cambio por "experiencias" pero los html los dejo como tutuores-->
 
@@ -64,9 +64,9 @@
 
 
           <!--Menú desplegable de contactos -->
-          <li class="dropdown"><a href="#"><span>Información personal</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Datos personales</a></li>
+          <li id="infopersonal" class="dropdown"><a href="#"><span  >Información personal</span> <i class="bi bi-chevron-down"></i></a>
+            <ul >
+              <li><a href="#" >Datos personales</a></li>
               <li><a href="#">Datos del menor</a></li>
             </ul>
           </li>
@@ -78,8 +78,8 @@
 
 
           <!--Menú desplegable de contactos -->
-          <li class="dropdown"><a href="#"><span>Contáctanos</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
+          <li id="contactanos" class="dropdown"><a href="#"><span>Contáctanos</span> <i class="bi bi-chevron-down"></i></a>
+            <ul >
               <li><a href="#">Línea Telefónica</a></li>
               <li><a href="#">WhatsApp</a></li>
               <li><a href="#">Facebook</a></li>
@@ -100,7 +100,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex justify-content-center align-items-center" >
     <div  class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
-      <h1 class="home">Bienvenido de Nuevo a <br>ConfiApp</h1>
+      <h1 id="bienvenida" class="home">Bienvenido de Nuevo a <br>ConfiApp</h1>
       <h2>Cada día que pasa tratamos de mejorar para llenar de seguridad y confianza a nuestra juventud !</h2>
       <a href="courses.html" class="btn-get-started">Registrar menor</a>
     </div>
@@ -554,6 +554,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="js/nicole.js"></script>
   <script src="js/home.js"></script>
 
 

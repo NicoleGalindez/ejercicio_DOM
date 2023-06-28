@@ -1,35 +1,97 @@
+/*
 document.getElementById("loginForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Evita que el formulario se envíe
   
     // Obtiene los valores del formulario
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
+    let bienvenido= document.querySelector(".bienvenida");
+        console.log(bienvenido);
   
     // Realiza la validación de usuario y contraseña
     if (username === "adso2556678" && password === "adso2023") {
       // Si el usuario y la contraseña son correctos, redirige a la página principal
       window.location.href = "Home.html";
       alert("¡Formulario válido! Serás enviado a la lista de opciones para ingresar a ConfiApp.");
-      const decide = prompt("Selecciona qué rol ocupas: 1 para Tutor, 2 para Menor o selecciona 3 para vista general");
-
-      if(decide=1){
-        alert('prueba')
-     document.querySelector('.home').textContent='Tutor bienvenido nuevamente a confiApp ';
-       }
-        else if(decide=2){
-            alert('prueba 22222222222')
-        };
-
-
-
-
-
+      
     } else {
       // Si el usuario y la contraseña son incorrectos, redirige al modal de registro
      window.location.href = "landing.html"; // dirije a la misma donde estan los botones de ins y registro
       alert(' Este usuario no existe, primero debes registrarte' ) ;
     }
 });
+*/
+
+
+let decide = prompt("Selecciona qué rol ocupas: 1 para Tutor, 2 para Menor ");
+let bienvenido= document.getElementById('bienvenida');
+    
+    {
+        if(decide==1){
+            alert("Has ingresado como tutor");
+            bienvenido.innerText=`Bienvenido nuevamente a confiApp `;
+
+            //-----menu:---------------
+           
+
+        //     navbar.children[6].remove();
+           
+        //    navbar.children[2].textContent='.';
+        //    navbar.children[3].textContent='.';
+           
+        
+            
+        
+        } 
+        else if(decide==2){
+            alert('Has ingresado como menor');
+
+                //-----menu:---------------
+        infopersonal.remove('Información personal');
+        mimenor.remove('Mi menor');
+        bienvenido.innerText=`Bienvenido, sientete seguro con confiApp `;
+
+        
+    }};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //____________________________________________________________----
@@ -43,11 +105,6 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
         //    navbar.children[3].remove('.');
 
        
-
-
- 
-
-    
 
 
   //________________________________________________________________________________________----

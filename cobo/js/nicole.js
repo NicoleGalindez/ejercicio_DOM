@@ -53,32 +53,97 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     // Obtiene los valores del formulario
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
-  
+    
+   
+
     // Realiza la validación de usuario y contraseña
     if (username === "adso2556678" && password === "adso2023") {
       // Si el usuario y la contraseña son correctos, redirige a la página principal
       window.location.href = "Home.html";
       alert("¡Formulario válido! Serás enviado a la lista de opciones para ingresar a ConfiApp.");
-      const decide = prompt("Selecciona qué rol ocupas: 1 para Tutor, 2 para Menor o selecciona 3 para vista general");
+     
 
-          if(decide=1){
-        
-          document.querySelector('.home').textContent='Tutor bienvenido nuevamente a confiApp '; 
-            }
-            else if(decide=2){
-            
-            }
-            else if(decide=2){
-            
-            };
-
-
-    } else {
+    }
+    
+    else if (username === "tutor123" && password === "adso2023") {
+        // Si el usuario y la contraseña son correctos, redirige a la página principal
+        window.location.href = "Home.html";
+        alert("¡Formulario válido! Serás enviado a la lista de opciones para ingresar a ConfiApp.");
+       
+  
+      }
+    else if (username === "menor123" && password === "adso2023") {
+        // Si el usuario y la contraseña son correctos, redirige a la página principal
+        window.location.href = "Home.html";
+        alert("¡Formulario válido! Serás enviado a la lista de opciones para ingresar a ConfiApp.");
+       
+  
+      }
+    else {
       // Si el usuario y la contraseña son incorrectos, redirige al modal de registro
      window.location.href = "landing.html"; // dirije a la misma donde estan los botones de ins y registro
       alert(' Este usuario no existe, primero debes registrarte' ) ;
     }
 });
+
+
+
+
+
+
+
+//__________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
