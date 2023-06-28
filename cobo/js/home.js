@@ -14,7 +14,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
 
       if(decide=1){
         alert('prueba')
-    // document.getElementById('home').textContent='Tutor bienvenido nuevamente a confiApp ' ;}
+     document.querySelector('.home').textContent='Tutor bienvenido nuevamente a confiApp ';
        }
         else if(decide=2){
             alert('prueba 22222222222')
