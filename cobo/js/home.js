@@ -24,11 +24,15 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
 
 
 let decide = prompt("Selecciona qué rol ocupas: 1 para Tutor, 2 para Menor ");
-let bienvenido= document.getElementById('bienvenida');
-let textobienvenido=document.getElementById('textobienvenida');
-let titcuadroverde=documento.getElementById('titcuadroverde');
-let textcuadroverde=documento.getElementById('textcuadroverde');
+let bienvenidotut= document.getElementById('bienvenida');
+let textobienvenidotut=document.getElementById('textobienvenida');
 let rutascomunes=getElementById('rutascomunes');
+//___ menor 
+let bienvenidomen= document.getElementById('bienvenida');
+let textobienvenidomen=document.getElementById('textobienvenida');
+let titcuadroverdemen=documento.getElementById('titcuadroverde');
+let textcuadroverdemen=documento.getElementById('textcuadroverde');
+let rutascomunesmen=getElementById('rutascomunes');
 
     {
         //______TUTOR_________
@@ -38,8 +42,8 @@ let rutascomunes=getElementById('rutascomunes');
 
 
              //------contenido------------
-            bienvenido.innerText=`Bienvenido nuevamente a confiApp `;
-            textobienvenido.innerText=`¡Todos los días estamos trabajando duro para progresar, para que nuestra juventud esté llena de seguridad y confianza!`;
+            bienvenidotut.innerText=`Bienvenido nuevamente a confiApp `;
+            textobienvenidotut.innerText=`¡Todos los días estamos trabajando duro para progresar, para que nuestra juventud esté llena de seguridad y confianza!`;
             rutascomunes.innerText=`Rutas recorridas `;
 
 
@@ -57,18 +61,19 @@ let rutascomunes=getElementById('rutascomunes');
                 //-----menu:---------------
         infopersonal.remove('Información personal');
         mimenor.remove('Mi menor');
-        contactanos.remove('Contáctanos');
+        contactanos.remove('Contáctanos');  //.innerText=`Cerrar sesion`;
+
               //------contenido------------
-        bienvenido.innerText=`Bienvenido, sientete seguro con confiApp `;
-        titcuadroverde.innerText=`¿Por qué confiar en nosotros ? `;
-        textcuadroverde.innerText=`Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, enim officiis. Dicta, et!`;
-        rutascomunes.innerText=`Mi historial de rutas`;
-        // NO SE QUITAAAA  
-        regismenor.remove('Registrar menor');
-        numeros.remove=('1962 Familias');
-        numeros.remove=('5347 Rurtas guardadas');
-        numeros.remove=('87 Condecoraciones');
-        numeros.remove=('25 Ciudades');
+        bienvenidomen.innerText=`Bienvenido, sientete seguro con confiApp `;
+        titcuadroverdemen.innerText=`¿Por qué confiar en nosotros ? `;
+        textcuadroverdemen.innerText=`Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, enim officiis. Dicta, et!`;
+        rutascomunesmen.innerText=`Mi historial de rutas`;
+        // // NO SE QUITAAAA  
+        // regismenor.remove('Registrar menor');
+        // numeros.remove=('1962 Familias');
+        // numeros.remove=('5347 Rurtas guardadas');
+        // numeros.remove=('87 Condecoraciones');
+        // numeros.remove=('25 Ciudades');
               //------imagenes------------
         
         let imagen1=document.getElementById('imagen1');
