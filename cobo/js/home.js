@@ -25,31 +25,58 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
 
 let decide = prompt("Selecciona qué rol ocupas: 1 para Tutor, 2 para Menor ");
 let bienvenido= document.getElementById('bienvenida');
-    
+let textobienvenido=document.getElementById('textobienvenida');
+let titcuadroverde=documento.getElementById('titcuadroverde');
+let textcuadroverde=documento.getElementById('textcuadroverde');
+let rutascomunes=getElementById('rutascomunes');
+
     {
+        //______TUTOR_________
         if(decide==1){
             alert("Has ingresado como tutor");
+             //-----menu:---------------
+
+
+             //------contenido------------
             bienvenido.innerText=`Bienvenido nuevamente a confiApp `;
+            textobienvenido.innerText=`¡Todos los días estamos trabajando duro para progresar, para que nuestra juventud esté llena de seguridad y confianza!`;
+            rutascomunes.innerText=`Rutas recorridas `;
 
-            //-----menu:---------------
-           
 
-        //     navbar.children[6].remove();
            
-        //    navbar.children[2].textContent='.';
-        //    navbar.children[3].textContent='.';
+           
            
         
             
         
         } 
+        // _______MENOR_______
         else if(decide==2){
             alert('Has ingresado como menor');
 
                 //-----menu:---------------
         infopersonal.remove('Información personal');
         mimenor.remove('Mi menor');
+        contactanos.remove('Contáctanos');
+              //------contenido------------
         bienvenido.innerText=`Bienvenido, sientete seguro con confiApp `;
+        titcuadroverde.innerText=`¿Por qué confiar en nosotros ? `;
+        textcuadroverde.innerText=`Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, enim officiis. Dicta, et!`;
+        rutascomunes.innerText=`Mi historial de rutas`;
+        // NO SE QUITAAAA  
+        regismenor.remove('Registrar menor');
+        numeros.remove=('1962 Familias');
+        numeros.remove=('5347 Rurtas guardadas');
+        numeros.remove=('87 Condecoraciones');
+        numeros.remove=('25 Ciudades');
+              //------imagenes------------
+        
+        let imagen1=document.getElementById('imagen1');
+        console.log(imagen1.src);
+        imagen1.src='assets/img/peopleworking.jpg';
+
+
+ 
 
         
     }};
@@ -94,20 +121,7 @@ let bienvenido= document.getElementById('bienvenida');
 
 
 
-//____________________________________________________________----
-// contenido   CONTENIDO
-
-
-        //-----menu:---------------
-        //    navbar.children[0].textContent=' ';
-        //    navbar.children[1].textContent='.';
-        //    navbar.children[2].textContent='.';
-        //    navbar.children[3].remove('.');
-
-       
-
-
-  //________________________________________________________________________________________----
+//_________________________________________________________________________________----
   // contenido   CONTENIDO
 /*
 //  bienvenido, menu y contenido dependiendo 1,2,3:
