@@ -60,15 +60,25 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
       // Si el usuario y la contraseña son correctos, redirige a la página principal
       window.location.href = "Home.html";
       alert("¡Formulario válido! Serás enviado a la lista de opciones para ingresar a ConfiApp.");
-     
+ 
+
+
+
+
+
     }
     
     else if (username === "tutor123" && password === "adso2023") {
         // Si el usuario y la contraseña son correctos, redirige a la página principal
         window.location.href = "Home.html";
         alert("¡Formulario válido! Serás enviado a la lista de opciones para ingresar a ConfiApp.");
-       
+      
+
       }
+
+
+
+
     else if (username === "menor123" && password === "adso2023") {
         // Si el usuario y la contraseña son correctos, redirige a la página principal
         window.location.href = "Home.html";
